@@ -1,0 +1,318 @@
+body {
+    margin: 0;
+    //font-family: 'Do Hyeon', sans-serif;
+    //font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color:gray;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(246, 214, 165);
+    padding: 8px 10px;
+    list-style: none;
+    margin: 0;
+    height: 35px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.navbar_2 {
+    display: flex;
+    //justify-content: space-between;
+    align-items: center;
+    background-color: blanchedalmond;
+    padding: 8px 12px;
+    padding-left:0;
+    margin : 0;
+    height: 35px;
+    font-family: 'Do Hyeon', sans-serif;
+
+    
+}
+
+.navbar_logo {
+    font-size: 20px;
+    color: rgb(201, 195, 195);
+
+}
+
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin : 0 auto;
+    padding-left:0px;
+}
+
+.navbar_menu li{
+    padding: 8px 18px;
+}
+
+.navbar_menu li:hover {
+    background-color: rgb(223, 151, 99);
+    border-radius: 4px;
+}
+
+.navbar_icons {
+    list-style: none;
+    color: rgb(201, 195, 195);
+    display: flex;
+    font-size: 25px;
+    padding: 4px;
+}
+
+.navbar_icons li {
+    padding: 2px 12px;
+}
+
+.menu_a {
+    color:rgb(93, 93, 93);
+}
+.menu_b {
+    color:rgb(149, 148, 134);
+}
+.menu_c {
+    color:rgb(93, 93, 93);
+}
+.menu_d {
+    color:rgb(149, 148, 134);
+}
+.menu_e {
+    color:rgb(93, 93, 93);
+}
+
+
+
+
+        .title {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 30px;
+            font-family: 'Do Hyeon', sans-serif;
+        }
+
+        .subtitle {
+            text-align:  center;
+            font-size: 15px;
+            font-weight: 50;
+            font-family: 'Do Hyeon', sans-serif;
+            //font-family: 'IBM Plex Sans KR', sans-serif;
+        }
+
+        .main {
+            //width: 800px;
+            margin: 0 auto;
+            margin-top: 60px;
+
+        }
+
+        .prices {
+           display: flex;
+           //display : block;
+           align-items: center;
+           //text-align : center;
+           margin : 10px auto;
+           font-family: 'Do Hyeon', sans-serif;
+        }
+
+        .price-item {
+            width: 200px;
+            height: 260px;
+            border: 1px solid black;
+            margin: 10px auto;
+            border-radius: 4px;
+            display : block;
+        }
+
+        .price-item-title {
+            font-size: 20px;
+            background: rgba(0, 0, 0, .03);
+            text-align: center;
+            height: 40px;
+            border-bottom: 1px solid black;
+            line-height: 40px;
+        }
+
+        .price-item-detail {
+            font-size: 15px;
+            text-align: center;
+            height: 48px;
+            line-height: 15px;
+            margin-top: 7px;
+        }
+
+        .submit_1 {
+            display: flex;
+            text-align: center;
+        }
+
+        button {
+          border-bottom: 0.1px solid;
+          width: 340px;
+          height: 35px;
+          background-color: #fddf9e;
+          color:rgb(30, 30, 31);
+          box-shadow: 0 4px 4px rgb(202, 201, 201);
+          font-size:12px;
+          font-weight: bold;
+          border-radius: 4px;
+          transition: 0.3s; 
+        }
+
+        #btn_medi {
+          display : block;
+          margin : 0 auto;
+          text-align : center;
+        }
+
+        button:focus{
+          outline: 0;
+        }
+        button:hover {
+          background-color: rgb(253, 255, 118);
+          cursor: pointer;
+          box-shadow: 0 2px
+        }
+
+
+.result_text {
+  display : block;
+  margin : 0 auto;
+  text-align : center;
+  line-height: 40px;
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+
+
+.QnA_title {
+ text-align: center;
+ font-size: 35px;
+ font-weight: bold;
+ line-height: 30px;
+ font-family: 'Do Hyeon', sans-serif;  
+}
+
+.QnA_title i {
+  font-size: 15px;
+}
+
+.QnA_subtitle {
+ text-align: center;
+ font-size: 15px;
+ //font-weight: bold;
+ line-height: 15px;
+ position: relative;
+ top:3px;
+ font-family: 'Do Hyeon', sans-serif;  
+}
+
+
+
+.Qus {
+  background:#fddf9e;
+  background-size: 200%
+  transition: .35s;
+  font-size:14px;
+  color: rgb(50, 50, 50);
+  position: relative;
+  left: 20px;
+  //right :20px;
+  //top: 0px;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-weight: 510;
+ 
+  }
+//.Qus:hover {
+  background-position: -100% 0;
+}
+.Ans {
+  font-size:14px;
+  color:#666;
+  width: 360px;
+  align: center;
+  position: relative;
+  left: 20px;
+  //right: 20px;
+  //top: 50px;
+  //margin-left : -20px;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  //line-height: 1;
+  display: block;
+  //align-items: center;
+}
+
+.Ans span {
+  text-decoration: underline;
+  color:  rgb(136, 116, 0);
+  font-weight: 510;
+
+  //position: relative;
+  //line-height: 1;
+}
+//.Ans span:after {
+  content: "";
+  position: absolute;
+  left : 0;
+  bottom : 10px;
+  z-index: -1;
+  width: 100%;
+  height : 2px;
+  background: rgb(211, 180, 2);
+}
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+  .bottom_content {
+    text-align:  center;
+    font-size: 10px;
+    font-weight: 50;
+    //font-family: 'Do Hyeon', sans-serif;
+   }
+    
+  .bottom_content_2 {
+    text-align:  center;
+    font-size: 11px;
+    font-weight: 50;
+    font-weight: 500;
+    //color:  rgb(136, 116, 0);
+    //font-family: 'Do Hyeon', sans-serif;
+    }
+
+    .bottom_content a {
+      text-decoration: underline;
+    }
+     #naver {
+      display : block;
+      margin : 0 auto;
+      text-align : center;
+
+
+
+
+
+
+.image_wrapper{
+    position: relative;
+    padding-top:100%;
+    }
+
+.image_wrapper .child{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    }

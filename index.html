@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="naver-site-verification" content="cf6096e92cd8457a2a3e7105b54de560425abcf1" />
+    <title>붙임머리 숱추가 계산기</title>
+    <meta name='description' content='붙임머리 숱추가 계산기는 붙임머리 시술에 필요한 붙임머리 개수를 정확히 계산하여 자연스러운 붙임머리 시술을 도와주는 도구입니다. 숱추가 계산기는 숱추가 횟수를 파악하여 과도한 숱추가 시술을 방지할 수 있습니다. 예쁜 붙임머리와 과소비 방지를 위해 붙임머리 숱추가 계산기를 활용하세요.'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;400;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a90bf94e1d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <i class="fas fa-vector-square"></i>
+            <a href="">튼튼한[무끔]붙임머리</a>
+        </div>
+        
+
+
+        <ul class="navbar_icons">
+            <li><a href="https://youtube.com/channel/UCKCoJjqdxG6cbbOok0vvt_w" class="fab fa-youtube"></a></li>
+            <li><a href="https://www.instagram.com/mooggem_/" class="fab fa-instagram"></a></li>
+        </ul>
+
+
+
+    </nav>
+    <nav class="navbar_2">
+        <ul class="navbar_menu">
+            
+            <li><a class="menu_a" href="https://blog.naver.com/mooggem/222389877630">
+            무끔소개</a></li>
+            
+            <li><a class="menu_b" href="http://naver.me/GXE7CUmU">
+            가격</a></li>
+            
+            <li><a class="menu_c" href="https://www.instagram.com/mooggem_/">
+            시술정보</a></li>
+            
+            <li><a class="menu_d" href="http://naver.me/GNBHbOYw">
+            예약</a></li>
+            
+            <li><a class="menu_e" href="https://talk.naver.com/ct/w4mit3">
+            문의</a></li>
+        </ul>
+    </nav>
+
+    
+    <div class="main">
+        <div class="title">
+            [무끔] 숱추가 계산기
+        </div>
+        <div class="subtitle">
+            [무끔]Bigdata를 활용한 숱추가 예측 계산기입니다.<br>
+            이제 디자이너에게 숱추가 묻지말고<br>
+            '[무끔]숱추가 예측기'로 당당하게 숱추가 요구하세요.
+        </div>
+
+
+        <div class="prices">
+            <div class="price-item">
+                <div class="price-item-title">
+                    머리 길이
+                </div>
+
+                <div class="price-item-detail">
+                    <input type="radio" name="length" value="4" id="long">
+                    <label for="long">롱<br>(Long)</label>
+                </div>
+                <div class="price-item-detail">
+                    <input type="radio" name="length" value="3" id="medium">
+                    <label for="medium">미디엄<br>(Medium)</label>
+                </div>
+                <div class="price-item-detail">
+                    <input type="radio" name="length" value="2" id="bobbed">
+                    <label for="bobbed">단발<br>(Bobbed)</label>
+                </div>
+                <div class="price-item-detail">
+                    <input type="radio" name="length" value="1" id="short">
+                    <label for="short">숏<br>(Short)</label>
+                </div>
+            </div>
+            <div class="price-item">
+                <div class="price-item-title">
+                    머리숱
+                </div>
+                <div class="price-item-detail">
+                    <input type="radio" name="amount" value="1" id="thin">
+                    <label for="thin">적음<br>(Thin)</label>
+                </div>
+                <div class="price-item-detail">
+                    <input type="radio" name="amount" value="2" id="normal_1">
+                    <label for="normal_1">보통<br>(Normal)</label>
+                </div>
+                <div class="price-item-detail">
+                    <input type="radio" name="amount" value="3" id="thick">
+                    <label for="thick">많음<br>(Thick)</label>
+                </div>
+            </div>
+            <div class="price-item">
+                <div class="price-item-title">
+                    곱슬 끼
+                </div>
+                <div class="price-item-detail">
+                    <input type="radio" name="curly" value="0" id="straight">
+                    <label for="straight">직모<br>또는 매직예정</label>
+                </div>
+                <div class="price-item-detail">
+                    <input type="radio" name="curly" value="0" id="normal_2">
+                    <label for="normal_2">반 곱슬<br>(Normal)</label>
+                </div>
+                <div class="price-item-detail">
+                    <input type="radio" name="curly" value="1" id="curly">
+                    <label for="curly">곱슬<br>(Curly)</label>
+                </div>
+            </div>
+        </div>
+
+        <div id="btn_medi">
+        <button type="button" onclick="submit();" value="예상 숱추가">
+        위 항목 선택 후 예상 숱 추가 확인(Touch)
+        </button>
+        </div>
+
+        <p></p>
+        <div class="result_text"> 고객님의 예상 숱 추가 횟수는
+
+            <input type="text" id="result_1" size="3"> ~
+            <input type="text" id="result_2" size="3">
+            회 입니다.
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+    </script>
+    <p></p>
+    <p></p>
+    <p>&nbsp;</p>
+
+    <hr 
+    width="380px"
+    size="2.5px"
+    noshade color="black"
+    align="center"
+    >
+<div align="center">
+  <figure class="image_wrapper">
+    <iframe class="child" width="320px" height="320px" src="https://www.youtube.com/embed/vKO4YxsKciw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </figure> 
+</div>   <hr 
+    width="380px"
+    size="2.5px"
+    noshade color="black"
+    align="center"
+    >
+
+  
+    <p>&nbsp;</p>
+    <p></p>
+    <p></p>
+    <p></p>
+
+    <div class="QnA">
+      <div class="QnA_title">
+      🤔Q&A
+      </div>
+      <div class="QnA_subtitle">
+      (붙임머리 전 숱추가 계산은 필수입니다.)
+      </div>
+      <p>&nbsp;</p>
+      <p></p>
+    
+
+
+      <span class="Qus">
+      Q. ‘숱추가’ 무슨 뜻인가요?🧐
+      </span>
+      <p></p>
+      <div class="Ans">
+      A. 숱 추가는 붙임머리 시술 시 한 팩(80쌍:160가닥)으로 <span>부족한 붙임머리를 추가하는 것</span>을 말해요. 숱 추가의 구성은 <span>1회 10쌍</span>(20가닥)이에요.
+      </div>
+      <p></p>
+
+
+
+      <span class="Qus">
+      Q. 제 헤어가 '단발'인지 '미디엄'인지 모르겠어요📏.
+      </span>
+      <p></p>
+      <div class="Ans">
+      A. [무끔]숱추가 계산기의 <span>머리 길이 기준</span>은 아래 사진과 같아요. 참고하여 선택해 주세요(사진 1).<br><br>
+      <img 
+      src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FIs3Zo%2FbtrssCFRBnM%2FsfCY3kj0kcY90QdgM8HDE1%2Fimg.jpg"
+      alt="머리 길이 기준"
+      width="250px"
+      >
+
+
+
+      </div>
+      <p></p>
+
+      <span class="Qus">
+      Q. '머리숱'도 기준이 있나요?🙋‍♀️
+      </span>
+      <p></p>
+      <div class="Ans">
+      A. 머리숱의 정도를 파악하는 방법은 <span>헤어를 뒤로 묶었을<br>
+        때</span>, <span>손에 잡히는 굵기</span>를 기준으로 판단할 수 있어요🤏.<br>
+      <br>
+      굵기가 <span>오백원 동전 크기</span> 이상이라면, 머리숱이 <span>많은 편.</span><br>
+      그리고 <span>백원 크기</span>로 묶인다면, 머리숱은 <span>보통</span>이에요.<br>
+      굵기가 <span>10원 크기</span> 이하라면, 머리숱이 <span>없는 편</span>이에요.<br><br>
+
+      (*동전 크기에 의한 머리숱 구분은 머리둘레를 고려하지<br>
+      않은 측정이에요. 따라서 정확하지 않을 수 있어요. 이점 참고하여 본인이 <span>📢기존에 알고 있던 머리숱</span>으로 선택하셔도 괜찮아요.)
+      </div>
+      <p></p>
+ 
+
+
+
+
+      <span class="Qus">
+      Q. '반곱슬'과 '곱슬'은 어떻게 구분하나요?🕵️‍♂️
+      </span>
+      <p></p>
+      <div class="Ans">
+      A. 미국의 저명한 헤어 스타일리스트 <span>Andre walker</span>는<br>
+      헤어의 곱슬 단계를 <span>10단계로 구분</span>하였어요.<br>
+      10단계 중 <span>반곱슬</span>과 <span>곱슬</span>은 <span>2a</span>와 <span>2b</span>으로 구분돼요<br>(사진 2).<br>
+
+      <img 
+      src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F0zDXY%2FbtrsrRbKLec%2FeociYc27kW68jZH149jHYK%2Fimg.jpg"
+      alt="andre walker에 의한 곱슬 머리 기준"
+      width="250px"
+      ><br>
+
+      그리고 <span>직모, 반곱슬, 곱슬</span>은 아래 사진과 같은 느낌이에요.<br>
+      참고하여 선택해 주세요(사진 3).<br><br>
+
+      <img 
+      src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F9pJep%2FbtrsvdFwA1v%2FRzASuoVMYJ4QHr23pKyEsK%2Fimg.jpg"
+      alt="직모, 반곱슬, 곱슬 기준"
+      width="250px"
+      ><br>
+
+      </div>
+      <p></p>
+
+      
+
+
+      <span class="Qus">
+      Q. '[무끔]숱추가 계산기' 믿어도 되나요?💝
+      </span>
+      <p></p>
+      <div class="Ans">
+      A. 네 믿어도 돼요. [무끔]숱추가 예측기는 2021년 5월부터 [무끔]에 방문한 고객님들의 숱추가 횟수를 근거로 현재까지 <span> 실시간으로 업데이트</span> 되고 있어요🥇. 숱추가 예측기에 사용된 통계의 유의수준은 p<.001이고, 실험 데이터에서 <span>98.5% 일치</span>했어요💯. 따라서 믿고 사용하셔도 됩니다👍🏻.<br><br>
+
+      [무끔]숱추가 계산기를 통해 고객님들께서 더 이상 <span>숱추가</span> 때문에 <span>걱정하지 않으셨으면</span> 좋겠어요(진심)❣.
+      </div><br>
+      <p></p>
+      
+
+        
+        <a id="naver" href="http://naver.me/GQ4Aaca5">
+        <button type="naver_link">
+        [무끔]의 가격정보·예약·시술정보·방문자리뷰 (Touch)
+        </button>
+        </a>
+
+      <p>&nbsp;</p>
+
+    </div>
+      <hr 
+      width="380px"
+      size="0.5px"
+      noshade color=" rgb(202, 201, 201)"
+      align="center"
+      ><br>
+
+
+
+
+    <div class="bottom">
+        <div class="bottom_content">
+            <a>대한민국</a> ⓒ [무끔]붙임머리<br>
+            본 계산기는 지식재산권이 있는 특허입니다.<br>
+            (특허 : 5411545789)<br>
+            무단 전재와 무단 복제를 금함.<br><br>
+
+            주소 및 연락처 : 대전시 유성구 유성대로654번길 145-1<br>
+            0507-1380-8879<br>
+
+            대표자 : 서진원 │ 대표원장 : 이세미<br>
+            사업자등록번호 : 644-16-01585<br><br>
+            
+        </div>
+        <div class="bottom_content_2">
+            튼튼한 [무끔] 붙임머리<br><br>
+        </div>
+    </div>    
+
+</body>
+
+</html>
