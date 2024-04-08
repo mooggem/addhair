@@ -155,16 +155,19 @@ a {
         button {
           border-bottom: 0.1px solid;
           width: 340px;
-          height: 35px;
-          background-color: #fddf9e;
-          color:rgb(30, 30, 31);
-          box-shadow: 0 4px 4px rgb(202, 201, 201);
-          font-size:12px;
+          height: 45px;
+          background-color: rgb(255, 255, 255);
+          border: 1px solid rgb(51, 50, 50);
+          color:rgb(22, 22, 22);
+          box-shadow: none;
+          font-size:14px;
           font-weight: bold;
-          border-radius: 4px;
-          transition: 0.3s; 
+          border-radius: 10px;
+          transition: 0.3s;
+          line-height: 1.2;
         }
 
+        
         #btn_medi {
           display : block;
           margin : 0 auto;
@@ -174,8 +177,14 @@ a {
         button:focus{
           outline: 0;
         }
+
+        button:focus{
+          outline: 0;
+        }
+
+
         button:hover {
-          background-color: rgb(253, 255, 118);
+          background-color: rgb(112, 255, 119);
           cursor: pointer;
           box-shadow: 0 2px
         }
@@ -227,8 +236,8 @@ a {
   //top: 0px;
   font-family: 'IBM Plex Sans KR', sans-serif;
   font-weight: 510;
- 
   }
+
 //.Qus:hover {
   background-position: -100% 0;
 }
@@ -252,10 +261,10 @@ a {
   text-decoration: underline;
   color:  rgb(136, 116, 0);
   font-weight: 510;
-
   //position: relative;
   //line-height: 1;
 }
+
 //.Ans span:after {
   content: "";
   position: absolute;
@@ -296,9 +305,43 @@ a {
       display : block;
       margin : 0 auto;
       text-align : center;
+     }
+      
+      
+      input[id="result_check"] {
+        display: none;
+      }
 
+      input[id="result_check"] + label {
+        display: block;
+        padding: 10px;
+        border:1px solid #000000;
+        color: #000000;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: 'Do Hyeon', sans-serif;
+        background: #fddf9e;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      input[id="result_check"] + label:hover {
+        background-color: rgb(255, 255, 226);
+        cursor: pointer;
+        box-shadow: 0 2px
+      }
+      div[class="sidebar"]{
+        width: 100%;
+        height: 70px;
+        background-color: rgba(88, 85, 85, 0.7);
+        position: fixed;
+        bottom: -70px;
+        z-index: 1;
+        transition:all 0.8s;
+      }
 
-
+      input[id="result_check"]:checked + label +div{
+        bottom:0;
+      }
 
 
 
