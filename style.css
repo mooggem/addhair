@@ -155,8 +155,8 @@ a {
         button {
           border-bottom: 0.1px solid;
           width: 340px;
-          height: 45px;
-          background-color: rgb(255, 255, 255);
+          height: 50px;
+          background-color: rgb(250, 249, 237);
           border: 1px solid rgb(51, 50, 50);
           color:rgb(22, 22, 22);
           box-shadow: none;
@@ -184,7 +184,7 @@ a {
 
 
         button:hover {
-          background-color: rgb(112, 255, 119);
+          background-color: rgb(204, 248, 206);
           cursor: pointer;
           box-shadow: 0 2px
         }
@@ -320,7 +320,7 @@ a {
         font-size: 15px;
         font-weight: 500;
         font-family: 'Do Hyeon', sans-serif;
-        background: #fddf9e;
+        background: #fde9bd;
         cursor: pointer;
         border-radius: 5px;
       }
@@ -331,10 +331,10 @@ a {
       }
       div[class="sidebar"]{
         width: 100%;
-        height: 70px;
+        height: 120px;
         background-color: rgba(88, 85, 85, 0.7);
         position: fixed;
-        bottom: -70px;
+        bottom: -120px;
         z-index: 1;
         transition:all 0.8s;
       }
