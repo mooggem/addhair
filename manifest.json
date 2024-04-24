@@ -1,0 +1,47 @@
+{
+  "background_color": "#fcf6c0",
+  "description": "나에게 딱 맞는 붙임머리 개수 계산, 정확한 숱추가 횟수, 과한 숱추가 방지.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "붙임머리 숱추가 계산기",
+  "orientation": "portrait",
+  "scope": "/",
+  "short_name": "붙임머리 숱추가 계산기",
+  "start_url": "/",
+  "theme_color": "#ffefc4",
+  "icons": [
+    {
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbgqfWm%2FbtsGewKSU1z%2FigMq9eBXNCrlNFeQMSCw2K%2Fimg.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbIuMro%2FbtsGcPdMumL%2FMHsXSLn9BsRkfuc988Bdl1%2Fimg.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fmx96v%2FbtsGeQPNi5b%2FCL9Rx5Jkl9ocOC6wUlV5b1%2Fimg.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FyeP61%2FbtsGeznfH8L%2F1IbYsb9PLIjHiaLJjjK6fK%2Fimg.jpg",
+      "type": "image/jpeg",
+      "sizes": "1200x628"
+    }    {
+      "src": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FPu3hu%2FbtsGecMJNYY%2FlaMaLWwv6O9EWBgxg57M81%2Fimg.png",
+      "type": "image/jpeg",
+      "sizes": "512x512"
+    }
+  ],
+  "id": "mooggem",
+  "lang": "ko",
+  "display_override": [
+    "window-controls-overlay"
+  ],
+  "categories": [
+    "health",
+    "lifestyle"
+  ]
+}
